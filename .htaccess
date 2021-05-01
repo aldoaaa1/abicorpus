@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|css|js|fonts|img|plugin|favicon.ico|robots.txt)
+RewriteRule ^(.*)$ /AbiCorpus/index.php/$1 [L]
