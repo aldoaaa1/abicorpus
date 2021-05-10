@@ -13,7 +13,7 @@
 				$data['keywords'] = $GLOBALS['keywords']['index']; // Variable que se toma de templates/titles
 				$this->load->view('template/header', $data);
 				$this->load->view('index');
-				$this->load->view('template/Close');
+				$this->load->view('template/close');
 				return false;
 			}
 			$this->load->view('welcome_message');
@@ -26,7 +26,7 @@
 			$data['keywords'] = $GLOBALS['keywords'][$page];
 			$this->load->view('template/header', $data);
 			$this->load->view($page);
-			$this->load->view('template/Close');
+			$this->load->view('template/close');
 		}
 		function nueva_visita(){
 			$this->load->model('Enviar_estadisticas');

@@ -44,14 +44,16 @@ header menu{
     right: 40px;
     font-size: 30px;
     color: #eee;
+    font-family: 'Raleway', sans-serif;
 }
 #phone_menu_open a{
+	font-family: 'Raleway', sans-serif;
     background-color: #eee;
     color: #D79D93;
-    padding: 30px;
+    padding: 20px;
     width: 80%;
     text-align: center;
-    margin: 20px;
+    margin: 10px;
     border-radius: 10px;
 }
 header #phone_menu{
@@ -63,7 +65,7 @@ header #phone_menu{
     border-radius: 50%;
 }
 header #phone_menu img, header #phone_menu{
-	width: 40px;
+	width: 30px;
 	height: 100%;
 	border-radius: 0;
 }
