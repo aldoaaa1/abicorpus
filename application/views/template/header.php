@@ -6,6 +6,7 @@
 	<title><?= $title ?></title>
 	<meta name="description" content="<?= $description ?>">
 	<meta name="keywords" content="<?= $keywords ?>">
+	<link rel="icon" href="img/favicon.svg">
 
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>fonts/Roboto/roboto.css">
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>fonts/BootstrapIcons/bootstrap-icons.css">

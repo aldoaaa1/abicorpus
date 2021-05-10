@@ -3,6 +3,7 @@
 	<!-- <script src="<?=base_url()?>plugin/materialize.min.js"></script> -->
 	<script src="<?=base_url()?>plugin/sweetalert2.min.js"></script>
 	<script src="<?=base_url()?>js/estadisticas.js"></script>
+	<script src="<?=base_url()?>js/general.js"></script>
 	<?php
 		if (file_exists('js/'.$page.'.js')) {
 			echo '<script src="'.base_url().'js/'.$page.'.js"></script>';

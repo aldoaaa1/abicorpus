@@ -1,8 +1,8 @@
 <?php 
 
-	$GLOBALS['title']['index'] = 'New Page!!';
-	$GLOBALS['description']['index'] = 'Esta es la pagina index';
-	$GLOBALS['keywords']['index'] = 'keyword1 keyword2';
+	$GLOBALS['title']['index'] = 'Abi Corpus Hair Studio';
+	$GLOBALS['description']['index'] = 'Diseño de Color, Aplicación de Tintas, Botox Capilar, Cortes, Despuntes, Aplicación de Gelish, Peinado, Maquillaje, Uñas de acrilico y más...';
+	$GLOBALS['keywords']['index'] = 'AbiCorpus HairStudio AbiCorpusHairStudio Hair Studio Abi Corpus';
 
 	$GLOBALS['title']['agenda'] = 'Agenda';
 	$GLOBALS['description']['agenda'] = 'Agenda de clientes AbiCorpus';

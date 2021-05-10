@@ -12,10 +12,7 @@
 				$data['description'] = $GLOBALS['description']['index']; // Variable que se toma de templates/titles
 				$data['keywords'] = $GLOBALS['keywords']['index']; // Variable que se toma de templates/titles
 				$this->load->view('template/header', $data);
-				// $this->load->view('template/menu');
 				$this->load->view('index');
-				// $this->load->view('template/footer');
-				// $this->load->view('template/scripts');
 				$this->load->view('template/Close');
 				return false;
 			}
@@ -28,10 +25,7 @@
 			$data['description'] = $GLOBALS['description'][$page];
 			$data['keywords'] = $GLOBALS['keywords'][$page];
 			$this->load->view('template/header', $data);
-			// $this->load->view('template/menu');
 			$this->load->view($page);
-			// $this->load->view('template/footer');
-			// $this->load->view('template/scripts');
 			$this->load->view('template/Close');
 		}
 		function nueva_visita(){
