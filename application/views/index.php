@@ -18,14 +18,14 @@
 	<p><a href="">Agenda tu Visita!</a></p>
 	<p>The hair is my art</p>
 	<div>
-		<a href="https://www.facebook.com/abicorpuss" target="_blank"><img src="img/facebook.svg" alt=""></a>
-		<a href="https://www.instagram.com/abicorpushairstudio" target="_blank"><img src="img/instagram.svg" alt=""></a>
-		<a href="https://wa.me/+528110041116?text=Quisiera%20mas%20informaci%C3%B3n%20porfavor.%20Me%20contanto%20a%20trav%C3%A9s%20de%20su%20P%C3%A1gina%20Web." target="_blank"><img src="img/whatsapp.svg" alt=""></a>
+		<a href="https://www.facebook.com/abicorpuss" target="_blank"><img src="<?=base_url()?>img/facebook.svg" alt=""></a>
+		<a href="https://www.instagram.com/abicorpushairstudio" target="_blank"><img src="<?=base_url()?>img/instagram.svg" alt=""></a>
+		<a href="https://wa.me/+528110041116?text=Quisiera%20mas%20informaci%C3%B3n%20porfavor.%20Me%20contanto%20a%20trav%C3%A9s%20de%20su%20P%C3%A1gina%20Web." target="_blank"><img src="<?=base_url()?>img/whatsapp.svg" alt=""></a>
 	</div>
 </div>
 <div style="height: 65px;"></div>
 <header>
-	<img src="img/AbiCompleto.svg" alt="Abi Corpus">
+	<img src="<?=base_url()?>img/AbiCompleto.svg" alt="Abi Corpus">
 	<menu>
 		<a class="menu_seleccionado" href="">Home</a>
 		<a href="">Services</a>
@@ -33,38 +33,38 @@
 		<a href="">Contact</a>
 	</menu>
 	<div id="phone_menu">
-		<img src="img/menu.svg" alt="">
+		<img src="<?=base_url()?>img/menu.svg" alt="">
 	</div>
 </header>
-<img id="header_img" src="img/foto1.jpg" alt="Header Hair">
+<img id="header_img" src="<?=base_url()?>img/foto1.jpg" alt="Header Hair">
 <div id="submenu">
 	<a href="">
-		<img src="img/mensajes.svg" alt="Icono Mensajes">
+		<img src="<?=base_url()?>img/mensajes.svg" alt="Icono Mensajes">
 		<span>Contáctanos</span>
 	</a>
 	<a href="">
-		<img src="img/foco.svg" alt="Icono Mensajes">
+		<img src="<?=base_url()?>img/foco.svg" alt="Icono Mensajes">
 		<span>Compártenos tu idea</span>
 	</a>
 	<a href="">
-		<img src="img/calendario.svg" alt="Icono Mensajes">
+		<img src="<?=base_url()?>img/calendario.svg" alt="Icono Mensajes">
 		<span>Agenda tu Cita!</span>
 	</a>
 </div>
 <section id="servicios">
 	<a href="">
 		<div></div>
-		<img src="img/foto2.jpg" alt="Diseño de Color">
+		<img src="<?=base_url()?>img/foto2.jpg" alt="Diseño de Color">
 		<span>Diseños de Color</span>
 	</a>
 	<a href="">
 		<div></div>
-		<img src="img/foto3.jpg" alt="Cortes">
+		<img src="<?=base_url()?>img/foto3.jpg" alt="Cortes">
 		<span>Cortes</span>
 	</a>
 	<a href="">
 		<div></div>
-		<img src="img/foto4.jpg" alt="Tratamietos">
+		<img src="<?=base_url()?>img/foto4.jpg" alt="Tratamietos">
 		<span>Tratamientos</span>
 	</a>
 </section>
@@ -76,12 +76,12 @@
 			<a href="">Agenda Ahora!</a>
 		</div>
 	</div>
-	<img src="img/foto5.jpg" alt="Agenda Ahora!">
+	<img src="<?=base_url()?>img/foto5.jpg" alt="Agenda Ahora!">
 </section>
 <section id="redes">
-	<a href="https://www.facebook.com/abicorpuss" target="_blank"><img src="img/facebook.svg" alt=""></a>
-	<a href="https://www.instagram.com/abicorpushairstudio" target="_blank"><img src="img/instagram.svg" alt=""></a>
-	<a href="https://wa.me/+528110041116?text=Quisiera%20mas%20informaci%C3%B3n%20porfavor.%20Me%20contanto%20a%20trav%C3%A9s%20de%20su%20P%C3%A1gina%20Web." target="_blank"><img src="img/whatsapp.svg" alt=""></a>
+	<a href="https://www.facebook.com/abicorpuss" target="_blank"><img src="<?=base_url()?>img/facebook.svg" alt=""></a>
+	<a href="https://www.instagram.com/abicorpushairstudio" target="_blank"><img src="<?=base_url()?>img/instagram.svg" alt=""></a>
+	<a href="https://wa.me/+528110041116?text=Quisiera%20mas%20informaci%C3%B3n%20porfavor.%20Me%20contanto%20a%20trav%C3%A9s%20de%20su%20P%C3%A1gina%20Web." target="_blank"><img src="<?=base_url()?>img/whatsapp.svg" alt=""></a>
 </section>
 <section id="ubicacion">
 	<div>
@@ -91,7 +91,7 @@
 </section>
 <footer>
 	<div>
-		<img src="img/AbiBlanco.svg" alt="Abi Corpus">
+		<img src="<?=base_url()?>img/AbiBlanco.svg" alt="Abi Corpus">
 	</div>
 	<div>
 		<h3>Visítanos</h3>
@@ -106,7 +106,7 @@
 <link rel="stylesheet" href="https://aldoalcala.com/code/chatbox.css">
 <div id="chatbox">
 	<!-- NECESITA TENER JQUERY PARA FUNCIONAR -->
-	<div class="chatbox-asesor" data-img="img/user.jpg" data-nombre="User" data-puesto="Técnica de Color" data-correo="aldo.aaa1@gmail.com"></div>
+	<div class="chatbox-asesor" data-img="<?=base_url()?>img/user.jpg" data-nombre="User" data-puesto="Técnica de Color" data-correo="aldo.aaa1@gmail.com"></div>
 	<div class="chatbox-question" data-question="¡Hola! ¿Que servicio te llama la atención?"></div>
 	<div class="chatbox-question" data-question="¿En que correo o teléfono podría contactarte?"></div>
 	<div class="chatbox-question" data-question="¿Con quién tengo el gusto de conversar?"></div>
