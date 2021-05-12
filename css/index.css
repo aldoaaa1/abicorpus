@@ -49,7 +49,7 @@ header img, header menu{
 	position: absolute;
 	top: 50%; transform: translateY(-50%);
 }
-header img{
+header #logo_header{
 	left: 30px;
 	width: 100px;
 	border-radius: 50%;
@@ -92,15 +92,13 @@ header menu{
 header #phone_menu{
 	display: none;
     position: absolute;
-    right: 80px;
+    right: 50px;
     top: 50%;
     transform: translateY(-50%);
-    border-radius: 50%;
 }
 header #phone_menu img, header #phone_menu{
 	width: 30px;
 	height: 100%;
-	border-radius: 0;
 }
 header menu a{
     padding: 15px 30px;

@@ -14,7 +14,6 @@
 	<a href="">Contact</a>
 </div>
 <div id="hair_art">
-
 	<p><a href="">Agenda tu Visita!</a></p>
 	<p>The hair is my art</p>
 	<div>
@@ -25,7 +24,7 @@
 </div>
 <div style="height: 65px;"></div>
 <header>
-	<img src="<?=base_url()?>img/AbiCompleto.svg" alt="Abi Corpus">
+	<img id="logo_header" src="<?=base_url()?>img/AbiCompleto.svg" alt="Abi Corpus">
 	<menu>
 		<a class="menu_seleccionado" href="">Home</a>
 		<a href="">Services</a>
