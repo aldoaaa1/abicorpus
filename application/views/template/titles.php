@@ -8,4 +8,8 @@
 	$GLOBALS['description']['agenda'] = 'Agenda de clientes AbiCorpus';
 	$GLOBALS['keywords']['agenda'] = 'Agenda';
 
+	$GLOBALS['title']['login'] = 'Login | Control Panel';
+	$GLOBALS['description']['login'] = 'Acceso a panel de control AbiCorpus';
+	$GLOBALS['keywords']['login'] = 'Login';
+
 ?>

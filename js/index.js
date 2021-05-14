@@ -4,7 +4,7 @@ function loadPage(){
 	for(let i in start){
 		start[i].css('opacity','0');
 	}
-	$('#loader').css('transform', 'translateY(-100%)');
+	loader();
 	var	time = 300;
 	for(let i in start){
 		time += 300;
@@ -30,3 +30,7 @@ $(document).ready(function(){
 	loadPage();
 	startChatbox();
 });
+
+function goLogin(){
+	window.location=base_url()+"login";
+}

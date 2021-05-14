@@ -21,3 +21,11 @@
 	?>
 </head>
 <body>
+	<div id="loader">
+		<div class="container">
+			<p>Abi Corpus</p>
+			<div class="box1"></div>
+			<div class="box2"></div>
+			<div class="box3"></div>
+		</div>
+	</div>

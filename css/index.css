@@ -53,6 +53,7 @@ header #logo_header{
 	left: 30px;
 	width: 100px;
 	border-radius: 50%;
+	cursor: pointer;
 }
 header menu{
 	right: 100px;
@@ -246,7 +247,7 @@ footer img{
     margin: 50px 0;
 }
 footer > div{
-	width: 33%;
+	width: 33.33%;
 	background-color: #D79D93;
 	display: flex;
 	justify-content: center;
