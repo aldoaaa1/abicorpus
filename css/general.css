@@ -8,6 +8,9 @@ font-family: 'Raleway', sans-serif;
 *{
 	box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 body{
      font-family: 'Roboto';
      margin: 0;
@@ -25,6 +28,211 @@ h1, h2, h3, h4, h5, h6, strong{
 p, span, i{
 	font-family: 'Raleway', sans-serif;
 }
+
+
+
+#hair_art{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 65px;
+    text-align: center;
+    background-color: #D79D93;
+    z-index: 90;
+    justify-content: center;
+    align-items: center;
+}
+#hair_art p{
+  width: 33.33%;
+  font-family: 'Caveat', cursive; font-size: 22px;
+  color: #eee;
+}
+#hair_art p a{
+  color: #eee;
+  transition: all 0.2s ease;
+}
+#hair_art p a:hover{
+  color: #fff;
+  font-size: 24px;
+}
+#hair_art p:nth-child(2){
+  margin: 0; padding: 5px 0;
+}
+#hair_art div{
+  width: 33.33%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+#hair_art div a img{
+    width: 25px;
+    margin: 0 20px;
+    transition: all 0.2s ease;
+}
+#hair_art div a img:hover{
+  width: 30px;
+}
+
+
+/*ESTILOS DEL MENU PRINCIPAL*/
+header{
+  position: relative;
+  height: 150px;
+}
+header img, header menu{
+  position: absolute;
+  top: 50%; transform: translateY(-50%);
+}
+header #logo_header{
+  left: 30px;
+  width: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+header menu{
+  right: 50px;
+  margin: 0; padding: 0;
+}
+#phone_menu_open{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #D79D93;
+  z-index: 1001;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  opacity: 0;
+}
+#phone_menu_closeBtn, #phone_menu_openBtn{
+    position: absolute; display: flex;
+    justify-content: center; align-items: center;
+    overflow: hidden;
+}
+#phone_menu_closeBtn{
+  transform: rotate(45deg);
+  top: 40px; right: 40px;
+  width: 40px; height: 40px;
+}
+#phone_menu_closeBtn > .line{
+  position: absolute;
+  background-color: #fff;
+}
+#phone_menu_closeBtn > .line:nth-child(1){
+  width: 2px; height: 100%;
+  transform: translate3d(0, 100%, 0);
+}
+#phone_menu_closeBtn > .line:nth-child(2){
+  width: 100%; height: 2px;
+  transform: translate3d(100%, 0, 0);
+}
+#phone_menu_openBtn{
+  display: none;
+  flex-direction: column;
+  width: 40px; border-radius: 7%;
+  overflow: hidden;
+  top: 50%; right: 20px;
+  transform: translate(-50%, -50%);
+}
+#phone_menu_openBtn > .line{
+  width: 100%; height: 3px;
+  background-color: #d79d93;
+  opacity: 0; transform: translate3d(-100%, 0, 0);
+  animation: fadeInLeft 1s cubic-bezier(0.48, 0, 0.12, 1.02) forwards;
+}
+#phone_menu_openBtn > div:nth-child(1){
+  animation-delay: 0.8s;
+}
+#phone_menu_openBtn > div:nth-child(2){
+  animation-delay: 1s;
+  margin: 7px 0;
+}
+#phone_menu_openBtn > div:nth-child(3){
+  animation-delay: 1.2s;
+}
+#phone_menu_open a{
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  padding: 15px 0;
+  width: 80%;
+  text-align: center;
+  border-radius: 10px;
+  opacity: 0;
+}
+#phone_menu_open > a:nth-child(2){ animation-delay: 0s !important; }
+#phone_menu_open > a:nth-child(3){ animation-delay: 0.2s !important; }
+#phone_menu_open > a:nth-child(4){ animation-delay: 0.4s !important; }
+#phone_menu_open > a:nth-child(5){ animation-delay: 0.6s !important; }
+#phone_menu_open > .line{
+  width: 100%; height: 2px;
+  background-color: #fff;
+  margin: 30px 0;
+  position: absolute; bottom: 110px;
+  animation-delay: 0.8s !important;
+  opacity: 0;
+}
+#phone_menu_footer{
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: center;
+  position: absolute; bottom: 20px;
+}
+#phone_menu_footer > p, #phone_menu_footer > a{
+  display: block;
+  color: #fff !important;
+  width: 100%;
+  text-align: center;
+  margin: 5px; padding: 0;
+  font-size: 13px;
+  opacity: 0;
+}
+#phone_menu_footer > p:nth-child(1){ animation-delay: 1s !important; }
+#phone_menu_footer > p:nth-child(2){ animation-delay: 1.3s !important; }
+#phone_menu_footer > a:nth-child(3){ animation-delay: 1.6s !important; }
+#phone_menu_footer > a:nth-child(4){ animation-delay: 1.9s !important; }
+header menu a{
+  padding: 15px 30px;
+  color: #eee;
+  font-size: 16px;
+  font-family: 'Overpass', sans-serif;
+  transition: all 0.3s ease;
+}
+header menu a:hover{
+    color: #b35a2f;
+    box-shadow: 0 2px 0px 0px #b35a2f;
+}
+.menu_seleccionado{
+  box-shadow: 0 8px 0px 0px #d79d93;
+}
+header menu a, #submenu a{
+  color: #9e766f;
+}
+@media (max-width: 635px){
+  #hair_art p{
+    width: 50%;
+  }
+  #hair_art div{
+    display: none;
+  }
+}
+@media (max-width: 920px){
+  header #phone_menu{
+    display: block;
+  }
+  #phone_menu_openBtn{
+    display: flex;
+  }
+  header menu{
+    display: none;
+  }
+}
+
+
+
 
 /*LOADER*/
 #loader {

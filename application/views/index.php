@@ -1,32 +1,3 @@
-<div id="phone_menu_open">
-	<span>X</span>
-	<a class="menu_seleccionado" href="">Home</a>
-	<a href="">Services</a>
-	<a href="">Book Now</a>
-	<a href="">Contact</a>
-</div>
-<div id="hair_art">
-	<p><a href="">Agenda tu Visita!</a></p>
-	<p>The hair is my art</p>
-	<div>
-		<a href="https://www.facebook.com/abicorpuss" target="_blank"><img src="<?=base_url()?>img/facebook.svg" alt=""></a>
-		<a href="https://www.instagram.com/abicorpushairstudio" target="_blank"><img src="<?=base_url()?>img/instagram.svg" alt=""></a>
-		<a href="https://wa.me/+528110041116?text=Quisiera%20mas%20informaci%C3%B3n%20porfavor.%20Me%20contanto%20a%20trav%C3%A9s%20de%20su%20P%C3%A1gina%20Web." target="_blank"><img src="<?=base_url()?>img/whatsapp.svg" alt=""></a>
-	</div>
-</div>
-<div style="height: 65px;"></div>
-<header>
-	<img onclick="goLogin();" id="logo_header" src="<?=base_url()?>img/AbiCompleto.svg" alt="Abi Corpus">
-	<menu>
-		<a class="menu_seleccionado" href="">Home</a>
-		<a href="">Services</a>
-		<a href="">Book Now</a>
-		<a href="">Contact</a>
-	</menu>
-	<div id="phone_menu">
-		<img src="<?=base_url()?>img/menu.svg" alt="">
-	</div>
-</header>
 <img id="header_img" src="<?=base_url()?>img/foto1.jpg" alt="Header Hair">
 <div id="submenu">
 	<a href="">
@@ -94,9 +65,10 @@
 	</div>
 </footer>
 
+
+
 <link rel="stylesheet" href="https://aldoalcala.com/code/chatbox.css">
 <div id="chatbox">
-	<!-- NECESITA TENER JQUERY PARA FUNCIONAR -->
 	<div class="chatbox-asesor" data-img="<?=base_url()?>img/user.jpg" data-nombre="User" data-puesto="Técnica de Color" data-correo="aldo.aaa1@gmail.com"></div>
 	<div class="chatbox-question" data-question="¡Hola! ¿Que servicio te llama la atención?"></div>
 	<div class="chatbox-question" data-question="¿En que correo o teléfono podría contactarte?"></div>
@@ -105,3 +77,4 @@
 	<div class="chatbox-comportamiento" data-delay_autoshow_ms="18000" data-close_message="¡Muchas gracias por tu tiempo! Me contactaré contigo personalemte lo mas pronto posible. También estoy para servirte en el correo: aldo.aaa1@gmail.com"></div>
 </div>
 <script src="<?=base_url()?>js/chatbox.js"></script>
+
