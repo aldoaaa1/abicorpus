@@ -1,3 +1,10 @@
+<?php 
+	$general = $this->db->query("SELECT * FROM general");
+	$agenda = $this->db->query("SELECT * FROM agenda");
+	$hora_apertura = $general->row(0)->value; $hora_cierre = $general->row(1)->value;
+	date_default_timezone_set("America/Monterrey"); $hoy = date("Y-m-d"); $luego = date("Y-m-d",strtotime($hoy."+ 30 days"));;
+?>
+<p id="infoLoader">Test</p>
 <video autoplay loop muted>
 	<source src="<?=base_url()?>img/cabello1.mp4" type="video/mp4">
 </video>
@@ -53,36 +60,29 @@
 	</section>
 	<section id="book_info">
 		<label for="name">Nombre</label>
-		<input name="name" type="text"><br>
+		<input id="name" name="name" type="text"><br>
 		<label for="service">Servicio</label>
-		<select name="hora">
-			<option value=""></option>
-			<option value="diseño_de_color">Diseño de Color</option>
-			<option value="baño_de_color">Baño de Color</option>
-			<option value="tinte">Tinte</option>
-			<option value="botox_capilar">Botox Capilar</option>
-			<option value="ritual_vegano">Ritual Vegano</option>
-			<option value="tokio_inkarami">Tokio Inkarami</option>
-			<option value="despunte">Despunte</option>
-			<option value="Corte">Corte</option>
-			<option value="corte_bordado">Corte Bordado</option>
-			<option value="aplicacion_de_gelish">Aplicación de Gelish</option>
-			<option value="uñas_de_acrilico">Uñas de Acrilico</option>
-			<option value="laminado_de_ceja">Laminado de Ceja</option>
-			<option value="peinado_y_maquillaje">Peinado y Maquillaje</option>
+		<select onchange="updateHours()" id="service" name="service">
+			<option value="none"></option>
+			<?php 
+				$servicios = $this->db->query("SELECT * FROM servicios");
+				foreach($servicios->result() as $row){
+					echo ('<option value="'.$row->id.'">'.$row->nombre.'</option>');
+				}
+			?>
 		</select><br>
 		<label for="date">Dia</label>
-		<input name="date" type="date"><br>
+		<input id="date" onchange="getSchedule()" name="date" type="date" min="<?= $hoy ?>" max="<?= $luego ?>"><br>
 		<label for="hora">Hora</label>
-		<select name="hora">
-		  <option value="1200">12:00am</option>
-		  <option value="1700" selected>5:00pm</option>
-		  <option value="1900">7:00pm</option>
-		</select><br>
+		<select id="hora" name="hora" disabled>
+			<!-- Relleno de opciones en base a la agenda del día seleccionado -->
+		</select>
+		<p id="horas_disponibles">Tenemos Horas Disponibles!</p>
+		<p id="horas_no-disponibles">Disculpa! No hay horas disponibles para este servicio en el día seleccionado. Pueba otro dia.</p><br>
 		<label for="email">Correo</label>
-		<input name="email" type="email"><br>
+		<input id="email" name="email" type="email"><br>
 		<label for="whatsapp">WhatsApp Contacto</label>
-		<input name="whatsapp" type="tel"><br>
-		<h3 onclick="reservar();">Solicitar Reserva!</h3>
+		<input id="whatsapp" name="whatsapp" type="tel"><br>
+		<button onclick="reservar();">Solicitar Reserva!</button>
 	</section>
 </div>

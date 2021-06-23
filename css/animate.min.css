@@ -2266,7 +2266,8 @@
   }
   to {
     -webkit-transform: perspective(400px);
-    transform: perspective(400px)
+    transform: perspective(400px);
+    opacity: 1
   }
 }
 @keyframes flipInX {
@@ -2294,7 +2295,8 @@
   }
   to {
     -webkit-transform: perspective(400px);
-    transform: perspective(400px)
+    transform: perspective(400px);
+    opacity: 1
   }
 }
 .animate__flipInX {
@@ -2328,7 +2330,8 @@
   }
   to {
     -webkit-transform: perspective(400px);
-    transform: perspective(400px)
+    transform: perspective(400px);
+    opacity: 1
   }
 }
 @keyframes flipInY {

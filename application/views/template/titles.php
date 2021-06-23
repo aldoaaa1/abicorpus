@@ -6,7 +6,7 @@
 
 	$GLOBALS['title']['agenda'] = 'Agenda';
 	$GLOBALS['description']['agenda'] = 'Agenda de clientes AbiCorpus';
-	$GLOBALS['keywords']['agenda'] = 'Agenda';
+	$GLOBALS['keywords']['agenda'] = 'Agenda Abi Corpus Hair Studio';
 
 	$GLOBALS['title']['login'] = 'Login | Control Panel';
 	$GLOBALS['description']['login'] = 'Acceso a panel de control AbiCorpus';
@@ -14,14 +14,14 @@
 
 	$GLOBALS['title']['services'] = 'Services | Abi Corpus Hair Studio';
 	$GLOBALS['description']['services'] = 'Nuestros servicios a tu disposición. Diseño de color, Aplicación de tintas, Botox Capilar, Cortes y más...';
-	$GLOBALS['keywords']['services'] = 'Login';
+	$GLOBALS['keywords']['services'] = 'Servicios Cotizaciónes Abi Corpus Hair Studio';
 
 	$GLOBALS['title']['book_now'] = 'Book Now | Abi Corpus Hair Studio';
 	$GLOBALS['description']['book_now'] = 'Agenda con nosotros en Abi Corpus Hair Studio';
-	$GLOBALS['keywords']['book_now'] = 'Login';
+	$GLOBALS['keywords']['book_now'] = 'agendar cita cabello Abi Corpus Hair Studio';
 
 	$GLOBALS['title']['contact'] = 'Contact | Abi Corpus Hair Studio';
 	$GLOBALS['description']['contact'] = 'Contactanos! en Abi Corpus Hair Studio te escuchamos. Queremos saber tus dudas u opiniones.';
-	$GLOBALS['keywords']['contact'] = 'Login';
+	$GLOBALS['keywords']['contact'] = 'Contacto Mensaje Abi Corpus Hair Studio';
 
 ?>

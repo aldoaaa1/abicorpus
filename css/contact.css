@@ -1,48 +1,114 @@
-div{
-	display: flex;
+*{
+    box-sizing: border-box;
 }
-div > section:nth-child(1){
-	width: 66.66%;
-	padding: 50px;
+video{
+    position: fixed; object-fit: cover;
+    width: 100%; height: 100%;
+    filter: brightness(0.6);
+    z-index: -1;
 }
-div > section:nth-child(2){
-	width: 33.33%;
-	border-left: 1px solid #D79D93;
+body{
+    background-color: #222;
+    display: flex; justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
-section{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+#contacto{
+    width: 800px;
+    max-width: 100%;
+    margin: auto;
 }
-div > section:nth-child(1) > input{
-	width: 300px;
-    height: 30px;
-    text-align: center;
-    margin: 10px 0;
-    max-width: 90%;
-    border: none;
-    border-bottom: 1px solid #aaa;
-    background-color: transparent;
+menu{
+    margin: 0; padding: 0;
+    height: 50px; width: 100%;
+    display: flex; justify-content: center;
+    align-items: center;
+    z-index: 2;
+    overflow: hidden;
+    padding-left: 30px;
 }
-div > section:nth-child(1) > textarea{
-	width: 300px;
-    height: 150px;
-    text-align: center;
-    margin: 10px 0;
-    max-width: 90%;
-    border: none;
-    border-bottom: 1px solid #aaa;
-    background-color: transparent;
-}
-div > section:nth-child(1) > p{
-	background: #d79d93;
-    padding: 10px 50px;
+menu > a{
     color: #fff;
-    letter-spacing: 5px;
-    width: 300px;
-    text-align: center;
+    margin-right: 20px;
+    padding: 8px 10px;
+    font-weight: 300;
+    transform: translateY(-1200px) scale(.7);
+    animation: backInDown 1.5s cubic-bezier(0.49, 0, 0, 1.01) forwards;
+}
+menu > a:nth-child(2){ animation-delay: 0.3s; }
+menu > a:nth-child(3){
+    animation-delay: 0.6s;
+}
+menu > a:nth-child(4){
+    box-shadow: 0px 4px 0px 0px rgb(255 255 255 / 75%);
+    animation-delay: 0.9s;
+}
+#contacto svg{
+    padding: 30px 30px 5px;
+    width: 450px;
     max-width: 90%;
-    margin: 30px 0 0;
+}
+#contacto svg path{
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+}
+#Capa_1-2 > path:nth-child(1){animation-delay: 0s;}
+#Capa_1-2 > path:nth-child(2){animation-delay: 0.1s;}
+#Capa_1-2 > path:nth-child(3){animation-delay: 0.2s;}
+#Capa_1-2 > path:nth-child(4){animation-delay: 0.3s;}
+#Capa_1-2 > path:nth-child(5){animation-delay: 0.4s;}
+#Capa_1-2 > path:nth-child(6){animation-delay: 0.5s;}
+#Capa_1-2 > path:nth-child(7){animation-delay: 0.6s;}
+#Capa_1-2 > path:nth-child(8){animation-delay: 0.7s;}
+#contacto svg rect{
+    opacity: 0;
+    animation: fadeInRight 1s ease 1s forwards;
+}
+#message_form p{
+    color: #fff;
+    margin: 15px 0 7px;
+    pointer-events: none;
+    transform: translateY(32px);
+    font-size: 15px;
+    transition: all 0.4s ease;
+}
+#message_form input, #message_form textarea{
+    display: block;
+    width: 350px;
+    max-width: 90%;
+    border-radius: 2px;
+    text-align: center;
+    border: none;
+    background-color: #0007;
+    color: #fff; padding: 10px;
+}
+#message_form input{
+    height: 30px;
+}
+#message_form textarea{
+    height: 130px;
+}
+#nombre, #correo, #message{
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+}
+#nombre{animation-delay: 1s;}
+#correo{ animation-delay: 1.2s; }
+#message{ animation-delay: 1.4s; }
+#nombre_label, #correo_label, #message_label{
+    opacity: 0;
+    animation: fadeIn 1s ease 2s forwards;
+}
+#message_form h3{
+    background: white;
+    display: inline-block;
+    padding: 10px 20px;
     cursor: pointer;
+    color: #585858;
+    margin-top: 50px;
+    opacity: 0;
+    animation: flipInX 1s ease 2.5s forwards;
+}
+.focus_label{
+    transform: translateY(0) !important;
 }

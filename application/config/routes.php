@@ -53,4 +53,5 @@ $route['default_controller'] = 'pages/index';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['rgv'] = 'pages/nueva_visita';
+$route['getServices'] = 'pages/getServices';
 $route['(:any)'] = 'pages/view/$1';

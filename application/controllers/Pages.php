@@ -6,13 +6,14 @@
 			$this->load->view('template/titles');
 		}
 		public function index(){
+			$data['general'] = $this->db->query("SELECT * FROM general");
 			if (file_exists(APPPATH.'views/index.php')) {
 				$data['page'] = 'index';
 				$data['title'] = $GLOBALS['title']['index']; // Variable que se toma de templates/titles
 				$data['description'] = $GLOBALS['description']['index']; // Variable que se toma de templates/titles
 				$data['keywords'] = $GLOBALS['keywords']['index']; // Variable que se toma de templates/titles
 				$this->load->view('template/header', $data);
-				$this->load->view('index');
+				$this->load->view('index', $data);
 				$this->load->view('template/close');
 				return false;
 			}
@@ -32,6 +33,28 @@
 			$this->load->model('Enviar_estadisticas');
 			$this->Enviar_estadisticas->registrar_visita();
 			$this->Enviar_estadisticas->registrar_frecuencia();
+		}
+		function timeToWork(){
+			$apertura = $this->db->query("Select value from general where description = 'hora_apertura'")->result_array();
+			$cierre = $this->db->query("Select value from general where description = 'hora_cierre'")->result_array();
+			$apertura = $apertura[0]['value'];
+			$cierre = $cierre[0]['value'];
+			$data['apertura'] = $apertura;
+			$data['cierre'] = $cierre;
+			echo json_encode($data);
+		}
+		function getShedule($day){
+			$schedule = $this->db->query('SELECT * FROM agenda where fecha like "'.$day.'%" and aprobada = 1')->result_array();
+			echo json_encode($schedule);
+		}
+		function getServiceTime($id){
+			$serviceTime = $this->db->query('SELECT * FROM servicios where id = '.$id)->result_array();
+			echo json_encode($serviceTime);
+		}
+		function reservar(){
+			$query = "INSERT INTO agenda (fecha, id_servicio, cliente, correo, whatsapp) VALUES ('".$_POST['fecha']."', ".$_POST['servicio'].", '".$_POST['nombre']."', '".$_POST['correo']."', '".$_POST['whatsapp']."')";
+			$this->db->query($query);
+			echo true;
 		}
 	}
 ?>

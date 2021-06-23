@@ -34,7 +34,7 @@
 	font-size: 14px;
 }
 #servicios a{
-	height: 100vh;
+	height: 50vh;
 	max-height: 800px;
 	overflow: hidden;
 }
@@ -66,6 +66,9 @@
     width: 80%;
     text-align: center;
     text-transform: uppercase;
+}
+#agenda_ahora{
+	height: 50vh;
 }
 #agenda_ahora div{
 	width: 66.6%;

@@ -11,6 +11,11 @@ function loader(){
 $(document).ready(function(){
 	loader();
 });
+function hideHeader(){
+	$('#hair_art').hide();
+	$("body > div:nth-child(4)").hide();
+	$("body > header").hide();
+}
 function selectMenu(page){
 	setTimeout(function(){
 		document.querySelector("body > header > menu > a:nth-child("+page+")").classList.add("menu_seleccionado");
@@ -43,4 +48,11 @@ function closePhoneMenu(){
 		$("#phone_menu_footer > p").css('animation', 'none');
 		$("#phone_menu_footer > a").css('animation', 'none');
 	},100)
+}
+function string2TimeA(string){
+	hora = parseInt(string.slice(0, 2));
+	minutos = parseInt(string.slice(2, 4))/60;
+	if (hora > 12) { hora = hora - 12 }
+	time = hora + minutos;
+	return time;
 }

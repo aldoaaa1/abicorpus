@@ -1,30 +1,32 @@
+
+
 <img id="header_img" src="<?=base_url()?>img/foto1.jpg" alt="Header Hair">
 <div id="submenu">
-	<a href="">
+	<a href="<?=base_url()?>contact">
 		<img src="<?=base_url()?>img/mensajes.svg" alt="Icono Mensajes">
 		<span>Contáctanos</span>
 	</a>
-	<a href="">
+	<a href="<?=base_url()?>contact">
 		<img src="<?=base_url()?>img/foco.svg" alt="Icono Mensajes">
 		<span>Compártenos tu idea</span>
 	</a>
-	<a href="">
+	<a href="<?=base_url()?>book_now">
 		<img src="<?=base_url()?>img/calendario.svg" alt="Icono Mensajes">
 		<span>Agenda tu Cita!</span>
 	</a>
 </div>
 <section id="servicios">
-	<a href="" class="onScroll" data-type="show" data-speed="2s" data-height="0.10" data-delay="5">
+	<a href="<?=base_url()?>services" class="onScroll" data-type="show" data-speed="2s" data-height="0.10" data-delay="5">
 		<div></div>
 		<img src="<?=base_url()?>img/foto2.jpg" alt="Diseño de Color">
 		<span>Diseños de Color</span>
 	</a>
-	<a href="" class="onScroll" data-type="show" data-speed="2s" data-height="0.10" data-delay="50">
+	<a href="<?=base_url()?>services" class="onScroll" data-type="show" data-speed="2s" data-height="0.10" data-delay="50">
 		<div></div>
 		<img src="<?=base_url()?>img/foto3.jpg" alt="Cortes">
 		<span>Cortes</span>
 	</a>
-	<a href="" class="onScroll" data-type="show" data-speed="2s" data-height="0.10" data-delay="100">
+	<a href="<?=base_url()?>services" class="onScroll" data-type="show" data-speed="2s" data-height="0.10" data-delay="100">
 		<div></div>
 		<img src="<?=base_url()?>img/foto4.jpg" alt="Tratamietos">
 		<span>Tratamientos</span>
@@ -33,9 +35,9 @@
 <section id="agenda_ahora">
 	<div class="onScroll" data-type="show" data-speed="0.5s" data-height="0.1">
 		<div id="contenedor1">
-			<h3 class="onScroll" data-type="show" data-speed="1s" data-height="0.1">Lorem, ipsum.</h3>
-			<p class="onScroll" data-type="up" data-speed="0.5s" data-height="0.1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam officiis minus quod quia dolorem voluptates?</p>
-			<a class="onScroll" data-type="up" data-speed="1.5s" data-height="0.1" href="">Agenda Ahora!</a>
+			<h3 class="onScroll" data-type="show" data-speed="1s" data-height="0.1">Vive nuestros servicios!</h3>
+			<p class="onScroll" data-type="up" data-speed="0.5s" data-height="0.1">¡Tenemos la experiencia y el conocimiento suficientes para crear la mejor versión de ti através de una increible presentación estética! ¡No lo dudes más!</p>
+			<a class="onScroll" data-type="up" data-speed="1.5s" data-height="0.1" href="<?=base_url()?>book_now">Agenda Ahora!</a>
 		</div>
 	</div>
 	<img class="onScroll" data-type="right" data-speed="1s" data-height="0.1" src="<?=base_url()?>img/foto5.jpg" alt="Agenda Ahora!">
@@ -65,8 +67,6 @@
 	</div>
 </footer>
 
-
-
 <link rel="stylesheet" href="https://aldoalcala.com/code/chatbox.css">
 <div id="chatbox">
 	<div class="chatbox-asesor" data-img="<?=base_url()?>img/user.jpg" data-nombre="User" data-puesto="Técnica de Color" data-correo="aldo.aaa1@gmail.com"></div>
@@ -78,3 +78,15 @@
 </div>
 <script src="<?=base_url()?>js/chatbox.js"></script>
 
+
+<?php 
+	// $general = $this->db->query("SELECT * FROM general");
+
+	// echo('<br><br><br>');
+	// foreach ($general->result() as $row){
+ //        echo $row->description; echo ": ";
+ //        echo $row->value;	echo "<br>";
+	// }
+	// echo('<br><br><br>');
+	// print_r($general->row(0));
+?>

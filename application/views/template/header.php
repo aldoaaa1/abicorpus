@@ -15,6 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>plugin/sweetalert2.min.css">
 	<link rel="stylesheet" href="<?=base_url()?>css/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>css/general.css">
+	<script>function base_url(){ return '<?=base_url()?>'; }</script>
 	<?php
 		if (file_exists('css/'.$page.'.css')) {
 			echo '<link rel="stylesheet" type="text/css" href="'.base_url().'css/'.$page.'.css">';
@@ -51,9 +52,9 @@
 		<p><a href="">Agenda tu Visita!</a></p>
 		<p>The hair is my art</p>
 		<div>
-			<a href="https://www.facebook.com/abicorpuss" target="_blank"><img src="<?=base_url()?>img/facebook.svg" alt=""></a>
-			<a href="https://www.instagram.com/abicorpushairstudio" target="_blank"><img src="<?=base_url()?>img/instagram.svg" alt=""></a>
-			<a href="https://wa.me/+528110041116?text=Quisiera%20mas%20informaci%C3%B3n%20porfavor.%20Me%20contanto%20a%20trav%C3%A9s%20de%20su%20P%C3%A1gina%20Web." target="_blank"><img src="<?=base_url()?>img/whatsapp.svg" alt=""></a>
+			<a href="https://www.facebook.com/abicorpuss" target="_blank"><img src="<?=base_url()?>img/facebook-white.svg" alt=""></a>
+			<a href="https://www.instagram.com/abicorpushairstudio" target="_blank"><img src="<?=base_url()?>img/instagram-white.svg" alt=""></a>
+			<a href="https://wa.me/+528110041116?text=Quisiera%20mas%20informaci%C3%B3n%20porfavor.%20Me%20contanto%20a%20trav%C3%A9s%20de%20su%20P%C3%A1gina%20Web." target="_blank"><img src="<?=base_url()?>img/whatsapp-white.svg" alt=""></a>
 		</div>
 	</div>
 	<div style="height: 65px;"></div>
