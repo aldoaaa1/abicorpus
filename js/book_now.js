@@ -156,6 +156,15 @@ function getSchedule(){
 		)
 		return false;
 	}
+	dayWeek = new Date(document.querySelector("#date").value).getDay();
+	if (dayWeek == 6) {
+		Swal.fire(
+		  'Lo sentimos!',
+		  'Los domingos o tenemos agenda disponible',
+		  'info'
+		)
+		return false;
+	}
 	showLoader('Buscando Horarios...');
 	serviceID = document.querySelector("#service").value;
 	day = getDay();

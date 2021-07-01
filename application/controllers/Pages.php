@@ -56,5 +56,11 @@
 			$this->db->query($query);
 			echo true;
 		}
+		function checkLogin(){
+			$user = $_POST['user'];	$pass = $_POST['pass'];
+			$query = 'SELECT * FROM users where user = "'.$user.'" and pass = "'.$pass.'"';
+			$user = $this->db->query($query);
+			echo json_encode($user);
+		}
 	}
 ?>

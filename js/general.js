@@ -14,7 +14,7 @@ $(document).ready(function(){
 function hideHeader(){
 	$('#hair_art').hide();
 	$("body > div:nth-child(4)").hide();
-	$("body > header").hide();
+	$("body > header").hide();	
 }
 function selectMenu(page){
 	setTimeout(function(){

@@ -1,3 +1,5 @@
+hideHeader();
+
 var user = document.querySelector("#user");
 var pass = document.querySelector("#pass");
 user.addEventListener('focus', function(){
@@ -21,7 +23,23 @@ pass.addEventListener('blur', function(){
 	}
 })
 function enter(){
-	window.location=base_url()+"agenda";
+	data = new Object();
+	data.user = document.querySelector("#user").value;
+	data.pass = document.querySelector("#pass").value;
+	$.post(base_url()+'pages/checkLogin', data).then(function(e){
+		console.log(JSON.parse(e));
+		// if (e == false) {
+		// 	hideLoader();
+		// 	setTimeout(function(){
+		// 		Swal.fire(
+		// 		  'Lo siento!',
+		// 		  'No existe registro con esos datos',
+		// 		  'error'
+		// 		)
+		// 	}, 400)
+		// }
+	});
+	// window.location=base_url()+"agenda";
 }
 
 var start = document.querySelectorAll(".fade");

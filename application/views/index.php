@@ -70,7 +70,7 @@
 <link rel="stylesheet" href="https://aldoalcala.com/code/chatbox.css">
 <div id="chatbox">
 	<div class="chatbox-asesor" data-img="<?=base_url()?>img/user.jpg" data-nombre="User" data-puesto="Técnica de Color" data-correo="aldo.aaa1@gmail.com"></div>
-	<div class="chatbox-question" data-question="¡Hola! ¿Que servicio te llama la atención?"></div>
+	<div class="chatbox-question" data-question="¡Hola! ¿Que servicio te interesa?"></div>
 	<div class="chatbox-question" data-question="¿En que correo o teléfono podría contactarte?"></div>
 	<div class="chatbox-question" data-question="¿Con quién tengo el gusto de conversar?"></div>
 	<div class="chatbox-customColors" data-body="#f0efef" data-chatboxmsg="#FFF0F0" data-clientmsg="#fce8f9" data-iconhover="#FFF0F0"></div>

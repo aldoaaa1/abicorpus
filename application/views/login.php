@@ -7,7 +7,7 @@
 		<p class="fade">USER</p>
 		<input class="fade" id="user" type="text" autocomplete="off">
 		<p class="fade">PASSWORD</p>
-		<input class="fade" id="pass" type="text" autocomplete="off">
+		<input class="fade" id="pass" type="PASSWORD" autocomplete="off">
 		<div class="fade" id="acceso" onclick="enter();">Acceso</div>
 	</div>
 </div>
