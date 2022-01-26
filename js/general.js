@@ -11,11 +11,6 @@ function loader(){
 $(document).ready(function(){
 	loader();
 });
-function hideHeader(){
-	$('#hair_art').hide();
-	$("body > div:nth-child(4)").hide();
-	$("body > header").hide();	
-}
 function selectMenu(page){
 	setTimeout(function(){
 		document.querySelector("body > header > menu > a:nth-child("+page+")").classList.add("menu_seleccionado");

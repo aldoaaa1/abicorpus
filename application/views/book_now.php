@@ -4,7 +4,6 @@
 	$hora_apertura = $general->row(0)->value; $hora_cierre = $general->row(1)->value;
 	date_default_timezone_set("America/Monterrey"); $hoy = date("Y-m-d"); $luego = date("Y-m-d",strtotime($hoy."+ 30 days"));;
 ?>
-<p id="infoLoader">Test</p>
 <video autoplay loop muted>
 	<source src="<?=base_url()?>img/cabello1.mp4" type="video/mp4">
 </video>

@@ -1,4 +1,3 @@
-hideHeader();
 $(window).ready(function(){
 	selectMenu(2);
 	setTimeout(indicadores, 1000);

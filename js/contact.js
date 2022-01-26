@@ -1,4 +1,3 @@
-hideHeader();
 $(window).ready(function(){
 	loader();
 })

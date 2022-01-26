@@ -1,5 +1,3 @@
-hideHeader();
-
 var user = document.querySelector("#user");
 var pass = document.querySelector("#pass");
 user.addEventListener('focus', function(){
