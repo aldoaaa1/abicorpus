@@ -1,5 +1,3 @@
-hideHeader();
-
 $(window).ready(function(){
 	selectMenu(3);
 })

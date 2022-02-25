@@ -48,27 +48,3 @@
 			<a href="https://www.facebook.com/abicorpuss" target="_blank">FB: Abi Corpus Hair Studio</a>
 		</div>
 	</div>
-	<div id="hair_art">
-		<p><a href="">Agenda tu Visita!</a></p>
-		<p>The hair is my art</p>
-		<div>
-			<a href="https://www.facebook.com/abicorpuss" target="_blank"><img src="<?=base_url()?>img/facebook-white.svg" alt=""></a>
-			<a href="https://www.instagram.com/abicorpushairstudio" target="_blank"><img src="<?=base_url()?>img/instagram-white.svg" alt=""></a>
-			<a href="https://wa.me/+528110041116?text=Quisiera%20mas%20informaci%C3%B3n%20porfavor.%20Me%20contanto%20a%20trav%C3%A9s%20de%20su%20P%C3%A1gina%20Web." target="_blank"><img src="<?=base_url()?>img/whatsapp-white.svg" alt=""></a>
-		</div>
-	</div>
-	<div style="height: 65px;"></div>
-	<header>
-		<img onclick="goLogin();" id="logo_header" src="<?=base_url()?>img/AbiCompleto.svg" alt="Abi Corpus">
-		<menu>
-			<a href="<?=base_url()?>">Home</a>
-			<a href="<?=base_url()?>services">Services</a>
-			<a href="<?=base_url()?>book_now">Book Now</a>
-			<a href="<?=base_url()?>contact">Contact</a>
-		</menu>
-		<div id="phone_menu_openBtn" onclick="openPhoneMenu();">
-			<div class="line"></div>
-			<div class="line"></div>
-			<div class="line"></div>
-		</div>
-	</header>

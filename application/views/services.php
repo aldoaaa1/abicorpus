@@ -49,292 +49,345 @@
 
 <div id="contenedor_servicios">
 	<center class="servicio">
-		<img src="<?=base_url()?>img/foto3.jpg" alt="Servicio">
-		<div class="filter_white"></div>
-		<h2>Diseño de Color</h2>
-		<div class="duracion">
-			<h3>Duración:</h3>
-			<div class="indicador-tiempo">
-				<div class="indicador-fill_1" data-target="4"></div>
-				<div class="indicador-fill_2" data-target="6"></div>
-			</div>
-			<p>4 a 6 Horas</p>
+		<div class="servicio-img">
+			<img src="<?=base_url()?>img/foto3.jpg" alt="Servicio">
+			<div class="filter_white"></div>
 		</div>
-		<div class="precio">
-			<h3>Precio:</h3>
-			<div class="indicador-precio">
-				<div class="indicador-fill_1" data-target="1800"></div>
-				<div class="indicador-fill_2" data-target="2600"></div>
+		<div class="servicio-info">
+			<h2>Diseño de Color</h2>
+			<div class="duracion">
+				<h3>Duración:</h3>
+				<div class="indicador-tiempo">
+					<div class="indicador-fill_1" data-target="4"></div>
+					<div class="indicador-fill_2" data-target="6"></div>
+				</div>
+				<p>4 a 6 Horas</p>
 			</div>
-			<p>$1800 - $2600</p>
+			<div class="precio">
+				<h3>Precio:</h3>
+				<div class="indicador-precio">
+					<div class="indicador-fill_1" data-target="1800"></div>
+					<div class="indicador-fill_2" data-target="2600"></div>
+				</div>
+				<p>$1800 - $2600</p>
+			</div>
+			<a href="<?=base_url()?>book_now">Solicitar!</a>
 		</div>
-		<a href="<?=base_url()?>book_now">Solicitar!</a>
 	</center>
 	<center class="servicio">
-		<img src="<?=base_url()?>img/baño.jpg" alt="Servicio">
-		<div class="filter_white"></div>
-		<h2>Baño de Color</h2>
-		<div class="duracion">
-			<h3>Duración:</h3>
-			<div class="indicador-tiempo">
-				<div class="indicador-fill_1" data-target="1"></div>
-				<div class="indicador-fill_2" data-target="2"></div>
-			</div>
-			<p>1 a 2 Horas</p>
+		<div class="servicio-img">
+			<img src="<?=base_url()?>img/baño.jpg" alt="Servicio">
+			<div class="filter_white"></div>
 		</div>
-		<div class="precio">
-			<h3>Precio:</h3>
-			<div class="indicador-precio">
-				<div class="indicador-fill_1" data-target="400"></div>
-				<div class="indicador-fill_2" data-target="700"></div>
+		<div class="servicio-info">
+			<h2>Baño de Color</h2>
+			<div class="duracion">
+				<h3>Duración:</h3>
+				<div class="indicador-tiempo">
+					<div class="indicador-fill_1" data-target="1"></div>
+					<div class="indicador-fill_2" data-target="2"></div>
+				</div>
+				<p>1 a 2 Horas</p>
 			</div>
-			<p>$400 - $700</p>
+			<div class="precio">
+				<h3>Precio:</h3>
+				<div class="indicador-precio">
+					<div class="indicador-fill_1" data-target="400"></div>
+					<div class="indicador-fill_2" data-target="700"></div>
+				</div>
+				<p>$400 - $700</p>
+			</div>
+			<a href="<?=base_url()?>book_now">Solicitar!</a>
 		</div>
-		<a href="<?=base_url()?>book_now">Solicitar!</a>
 	</center>
 	<center class="servicio">
-		<img src="<?=base_url()?>img/foto4.jpg" alt="Servicio">
-		<div class="filter_white"></div>
-		<h2>Tinte</h2>
-		<div class="duracion">
-			<h3>Duración:</h3>
-			<div class="indicador-tiempo">
-				<div class="indicador-fill_1" data-target="2"></div>
-				<div class="indicador-fill_2" data-target="3"></div>
-			</div>
-			<p>2 a 3 Horas</p>
+		<div class="servicio-img">
+			<img src="<?=base_url()?>img/foto4.jpg" alt="Servicio">
+			<div class="filter_white"></div>
 		</div>
-		<div class="precio">
-			<h3>Precio:</h3>
-			<div class="indicador-precio">
-				<div class="indicador-fill_1" data-target="800"></div>
-				<div class="indicador-fill_2" data-target="1600"></div>
+		<div class="servicio-info">
+			<h2>Tinte</h2>
+			<div class="duracion">
+				<h3>Duración:</h3>
+				<div class="indicador-tiempo">
+					<div class="indicador-fill_1" data-target="2"></div>
+					<div class="indicador-fill_2" data-target="3"></div>
+				</div>
+				<p>2 a 3 Horas</p>
 			</div>
-			<p>$800 - $1600</p>
-		</div>
-		<a href="<?=base_url()?>book_now">Solicitar!</a>
-	</center>
-
-	<center class="servicio">
-		<img src="<?=base_url()?>img/botox.jpg" alt="Servicio">
-		<div class="filter_white"></div>
-		<h2>Botox Capilar</h2>
-		<div class="duracion">
-			<h3>Duración:</h3>
-			<div class="indicador-tiempo">
-				<div class="indicador-fill_1" data-target="2"></div>
-				<div class="indicador-fill_2" data-target="4"></div>
+			<div class="precio">
+				<h3>Precio:</h3>
+				<div class="indicador-precio">
+					<div class="indicador-fill_1" data-target="800"></div>
+					<div class="indicador-fill_2" data-target="1600"></div>
+				</div>
+				<p>$800 - $1600</p>
 			</div>
-			<p>2 a 4 Horas</p>
+			<a href="<?=base_url()?>book_now">Solicitar!</a>
 		</div>
-		<div class="precio">
-			<h3>Precio:</h3>
-			<div class="indicador-precio">
-				<div class="indicador-fill_1" data-target="1000"></div>
-				<div class="indicador-fill_2" data-target="1400"></div>
-			</div>
-			<p>$1000 - $1400</p>
-		</div>
-		<a href="<?=base_url()?>book_now">Solicitar!</a>
-	</center>
-	<center class="servicio">
-		<img src="<?=base_url()?>img/foto4.jpg" alt="Servicio">
-		<div class="filter_white"></div>
-		<h2>Ritual Vegano</h2>
-		<div class="duracion">
-			<h3>Duración:</h3>
-			<div class="indicador-tiempo">
-				<div class="indicador-fill_1" data-target="1"></div>
-				<div class="indicador-fill_2" data-target="2"></div>
-			</div>
-			<p>1 a 2 Horas</p>
-		</div>
-		<div class="precio">
-			<h3>Precio:</h3>
-			<div class="indicador-precio">
-				<div class="indicador-fill_1" data-target="600"></div>
-				<div class="indicador-fill_2" data-target="600"></div>
-			</div>
-			<p>$600</p>
-		</div>
-		<a href="<?=base_url()?>book_now">Solicitar!</a>
-	</center>
-	<center class="servicio">
-		<img src="<?=base_url()?>img/tokio.jpg" alt="Servicio">
-		<div class="filter_white"></div>
-		<h2>Tokio Inkarami</h2>
-		<div class="duracion">
-			<h3>Duración:</h3>
-			<div class="indicador-tiempo">
-				<div class="indicador-fill_1" data-target="1"></div>
-				<div class="indicador-fill_2" data-target="2"></div>
-			</div>
-			<p>1 a 2 Horas</p>
-		</div>
-		<div class="precio">
-			<h3>Precio:</h3>
-			<div class="indicador-precio">
-				<div class="indicador-fill_1" data-target="1100"></div>
-				<div class="indicador-fill_2" data-target="1300"></div>
-			</div>
-			<p>$1100 - $1300</p>
-		</div>
-		<a href="<?=base_url()?>book_now">Solicitar!</a>
 	</center>
 
 	<center class="servicio">
-		<img src="<?=base_url()?>img/despunte.png" alt="Servicio">
-		<div class="filter_white"></div>
-		<h2>Despunte</h2>
-		<div class="duracion">
-			<h3>Duración:</h3>
-			<div class="indicador-tiempo">
-				<div class="indicador-fill_1" data-target="1"></div>
-				<div class="indicador-fill_2" data-target="2"></div>
-			</div>
-			<p>1 a 2 Horas</p>
+		<div class="servicio-img">
+			<img src="<?=base_url()?>img/botox.jpg" alt="Servicio">
+			<div class="filter_white"></div>
 		</div>
-		<div class="precio">
-			<h3>Precio:</h3>
-			<div class="indicador-precio">
-				<div class="indicador-fill_1" data-target="150"></div>
-				<div class="indicador-fill_2" data-target="150"></div>
+		<div class="servicio-info">
+			<h2>Botox Capilar</h2>
+			<div class="duracion">
+				<h3>Duración:</h3>
+				<div class="indicador-tiempo">
+					<div class="indicador-fill_1" data-target="2"></div>
+					<div class="indicador-fill_2" data-target="4"></div>
+				</div>
+				<p>2 a 4 Horas</p>
 			</div>
-			<p>$150 - $150</p>
+			<div class="precio">
+				<h3>Precio:</h3>
+				<div class="indicador-precio">
+					<div class="indicador-fill_1" data-target="1000"></div>
+					<div class="indicador-fill_2" data-target="1400"></div>
+				</div>
+				<p>$1000 - $1400</p>
+			</div>
+			<a href="<?=base_url()?>book_now">Solicitar!</a>
 		</div>
-		<a href="<?=base_url()?>book_now">Solicitar!</a>
 	</center>
 	<center class="servicio">
-		<img src="<?=base_url()?>img/corte.jpg" alt="Servicio">
-		<div class="filter_white"></div>
-		<h2>Corte</h2>
-		<div class="duracion">
-			<h3>Duración:</h3>
-			<div class="indicador-tiempo">
-				<div class="indicador-fill_1" data-target="2"></div>
-				<div class="indicador-fill_2" data-target="4"></div>
-			</div>
-			<p>1 a 2 Horas</p>
+		<div class="servicio-img">
+			<img src="<?=base_url()?>img/foto4.jpg" alt="Servicio">
+			<div class="filter_white"></div>
 		</div>
-		<div class="precio">
-			<h3>Precio:</h3>
-			<div class="indicador-precio">
-				<div class="indicador-fill_1" data-target="250"></div>
-				<div class="indicador-fill_2" data-target="250"></div>
+		<div class="servicio-info">
+			<h2>Ritual Vegano</h2>
+			<div class="duracion">
+				<h3>Duración:</h3>
+				<div class="indicador-tiempo">
+					<div class="indicador-fill_1" data-target="1"></div>
+					<div class="indicador-fill_2" data-target="2"></div>
+				</div>
+				<p>1 a 2 Horas</p>
 			</div>
-			<p>$250</p>
+			<div class="precio">
+				<h3>Precio:</h3>
+				<div class="indicador-precio">
+					<div class="indicador-fill_1" data-target="600"></div>
+					<div class="indicador-fill_2" data-target="600"></div>
+				</div>
+				<p>$600</p>
+			</div>
+			<a href="<?=base_url()?>book_now">Solicitar!</a>
 		</div>
-		<a href="<?=base_url()?>book_now">Solicitar!</a>
 	</center>
 	<center class="servicio">
-		<img src="<?=base_url()?>img/corte_bordado.webp" alt="Servicio">
-		<div class="filter_white"></div>
-		<h2>Corte Bordado</h2>
-		<div class="duracion">
-			<h3>Duración:</h3>
-			<div class="indicador-tiempo">
-				<div class="indicador-fill_1" data-target="1"></div>
-				<div class="indicador-fill_2" data-target="1"></div>
-			</div>
-			<p>1 Hora</p>
+		<div class="servicio-img">
+			<img src="<?=base_url()?>img/tokio.jpg" alt="Servicio">
+			<div class="filter_white"></div>
 		</div>
-		<div class="precio">
-			<h3>Precio:</h3>
-			<div class="indicador-precio">
-				<div class="indicador-fill_1" data-target="300"></div>
-				<div class="indicador-fill_2" data-target="300"></div>
+		<div class="servicio-info">
+			<h2>Tokio Inkarami</h2>
+			<div class="duracion">
+				<h3>Duración:</h3>
+				<div class="indicador-tiempo">
+					<div class="indicador-fill_1" data-target="1"></div>
+					<div class="indicador-fill_2" data-target="2"></div>
+				</div>
+				<p>1 a 2 Horas</p>
 			</div>
-			<p>$300</p>
+			<div class="precio">
+				<h3>Precio:</h3>
+				<div class="indicador-precio">
+					<div class="indicador-fill_1" data-target="1100"></div>
+					<div class="indicador-fill_2" data-target="1300"></div>
+				</div>
+				<p>$1100 - $1300</p>
+			</div>
+			<a href="<?=base_url()?>book_now">Solicitar!</a>
 		</div>
-		<a href="<?=base_url()?>book_now">Solicitar!</a>
 	</center>
 
 	<center class="servicio">
-		<img src="<?=base_url()?>img/gelish.jpg" alt="Servicio">
-		<div class="filter_white"></div>
-		<h2>Aplicación de Gelish</h2>
-		<div class="duracion">
-			<h3>Duración:</h3>
-			<div class="indicador-tiempo">
-				<div class="indicador-fill_1" data-target="1"></div>
-				<div class="indicador-fill_2" data-target="2"></div>
-			</div>
-			<p>1 a 2 Horas</p>
+		<div class="servicio-img">
+			<img src="<?=base_url()?>img/despunte.png" alt="Servicio">
+			<div class="filter_white"></div>
 		</div>
-		<div class="precio">
-			<h3>Precio:</h3>
-			<div class="indicador-precio">
-				<div class="indicador-fill_1" data-target="150"></div>
-				<div class="indicador-fill_2" data-target="150"></div>
+		<div class="servicio-info">
+			<h2>Despunte</h2>
+			<div class="duracion">
+				<h3>Duración:</h3>
+				<div class="indicador-tiempo">
+					<div class="indicador-fill_1" data-target="1"></div>
+					<div class="indicador-fill_2" data-target="2"></div>
+				</div>
+				<p>1 a 2 Horas</p>
 			</div>
-			<p>$150</p>
+			<div class="precio">
+				<h3>Precio:</h3>
+				<div class="indicador-precio">
+					<div class="indicador-fill_1" data-target="150"></div>
+					<div class="indicador-fill_2" data-target="150"></div>
+				</div>
+				<p>$150 - $150</p>
+			</div>
+			<a href="<?=base_url()?>book_now">Solicitar!</a>
 		</div>
-		<a href="<?=base_url()?>book_now">Solicitar!</a>
 	</center>
 	<center class="servicio">
-		<img src="<?=base_url()?>img/uñas_acrilicas.jpeg" alt="Servicio">
-		<div class="filter_white"></div>
-		<h2>Uñas Acrilico</h2>
-		<div class="duracion">
-			<h3>Duración:</h3>
-			<div class="indicador-tiempo">
-				<div class="indicador-fill_1" data-target="2"></div>
-				<div class="indicador-fill_2" data-target="3"></div>
-			</div>
-			<p>2 a 3 Horas</p>
+		<div class="servicio-img">
+			<img src="<?=base_url()?>img/corte.jpg" alt="Servicio">
+			<div class="filter_white"></div>
 		</div>
-		<div class="precio">
-			<h3>Precio:</h3>
-			<div class="indicador-precio">
-				<div class="indicador-fill_1" data-target="300"></div>
-				<div class="indicador-fill_2" data-target="300"></div>
+		<div class="servicio-info">
+			<h2>Corte</h2>
+			<div class="duracion">
+				<h3>Duración:</h3>
+				<div class="indicador-tiempo">
+					<div class="indicador-fill_1" data-target="2"></div>
+					<div class="indicador-fill_2" data-target="4"></div>
+				</div>
+				<p>1 a 2 Horas</p>
 			</div>
-			<p>$300</p>
+			<div class="precio">
+				<h3>Precio:</h3>
+				<div class="indicador-precio">
+					<div class="indicador-fill_1" data-target="250"></div>
+					<div class="indicador-fill_2" data-target="250"></div>
+				</div>
+				<p>$250</p>
+			</div>
+			<a href="<?=base_url()?>book_now">Solicitar!</a>
 		</div>
-		<a href="<?=base_url()?>book_now">Solicitar!</a>
 	</center>
 	<center class="servicio">
-		<img src="<?=base_url()?>img/laminado.jpg" alt="Servicio">
-		<div class="filter_white"></div>
-		<h2>Laminado de Ceja</h2>
-		<div class="duracion">
-			<h3>Duración:</h3>
-			<div class="indicador-tiempo">
-				<div class="indicador-fill_1" data-target="1"></div>
-				<div class="indicador-fill_2" data-target="1"></div>
-			</div>
-			<p>1 Hora</p>
+		<div class="servicio-img">
+			<img src="<?=base_url()?>img/corte_bordado.webp" alt="Servicio">
+			<div class="filter_white"></div>
 		</div>
-		<div class="precio">
-			<h3>Precio:</h3>
-			<div class="indicador-precio">
-				<div class="indicador-fill_1" data-target="150"></div>
-				<div class="indicador-fill_2" data-target="150"></div>
+		<div class="servicio-info">
+			<h2>Corte Bordado</h2>
+			<div class="duracion">
+				<h3>Duración:</h3>
+				<div class="indicador-tiempo">
+					<div class="indicador-fill_1" data-target="1"></div>
+					<div class="indicador-fill_2" data-target="1"></div>
+				</div>
+				<p>1 Hora</p>
 			</div>
-			<p>$150</p>
+			<div class="precio">
+				<h3>Precio:</h3>
+				<div class="indicador-precio">
+					<div class="indicador-fill_1" data-target="300"></div>
+					<div class="indicador-fill_2" data-target="300"></div>
+				</div>
+				<p>$300</p>
+			</div>
+			<a href="<?=base_url()?>book_now">Solicitar!</a>
 		</div>
-		<a href="<?=base_url()?>book_now">Solicitar!</a>
+	</center>
+
+	<center class="servicio">
+		<div class="servicio-img">
+			<img src="<?=base_url()?>img/gelish.jpg" alt="Servicio">
+			<div class="filter_white"></div>
+		</div>
+		<div class="servicio-info">
+			<h2>Aplicación de Gelish</h2>
+			<div class="duracion">
+				<h3>Duración:</h3>
+				<div class="indicador-tiempo">
+					<div class="indicador-fill_1" data-target="1"></div>
+					<div class="indicador-fill_2" data-target="2"></div>
+				</div>
+				<p>1 a 2 Horas</p>
+			</div>
+			<div class="precio">
+				<h3>Precio:</h3>
+				<div class="indicador-precio">
+					<div class="indicador-fill_1" data-target="150"></div>
+					<div class="indicador-fill_2" data-target="150"></div>
+				</div>
+				<p>$150</p>
+			</div>
+			<a href="<?=base_url()?>book_now">Solicitar!</a>
+		</div>
 	</center>
 	<center class="servicio">
-		<img src="<?=base_url()?>img/peinado_maquillaje.jpg" alt="Servicio">
-		<div class="filter_white"></div>
-		<h2>Peinado y Maquillaje</h2>
-		<div class="duracion">
-			<h3>Duración:</h3>
-			<div class="indicador-tiempo">
-				<div class="indicador-fill_1" data-target="2"></div>
-				<div class="indicador-fill_2" data-target="3"></div>
-			</div>
-			<p>1 a 3 Horas</p>
+		<div class="servicio-img">
+			<img src="<?=base_url()?>img/uñas_acrilicas.jpeg" alt="Servicio">
+			<div class="filter_white"></div>
 		</div>
-		<div class="precio">
-			<h3>Precio:</h3>
-			<div class="indicador-precio">
-				<div class="indicador-fill_1" data-target="550"></div>
-				<div class="indicador-fill_2" data-target="650"></div>
+		<div class="servicio-info">
+			<h2>Uñas Acrilico</h2>
+			<div class="duracion">
+				<h3>Duración:</h3>
+				<div class="indicador-tiempo">
+					<div class="indicador-fill_1" data-target="2"></div>
+					<div class="indicador-fill_2" data-target="3"></div>
+				</div>
+				<p>2 a 3 Horas</p>
 			</div>
-			<p>$550 - $650</p>
+			<div class="precio">
+				<h3>Precio:</h3>
+				<div class="indicador-precio">
+					<div class="indicador-fill_1" data-target="300"></div>
+					<div class="indicador-fill_2" data-target="300"></div>
+				</div>
+				<p>$300</p>
+			</div>
+			<a href="<?=base_url()?>book_now">Solicitar!</a>
 		</div>
-		<a href="<?=base_url()?>book_now">Solicitar!</a>
+	</center>
+	<center class="servicio">
+		<div class="servicio-img">
+			<img src="<?=base_url()?>img/laminado.jpg" alt="Servicio">
+			<div class="filter_white"></div>
+		</div>
+		<div class="servicio-info">
+			<h2>Laminado de Ceja</h2>
+			<div class="duracion">
+				<h3>Duración:</h3>
+				<div class="indicador-tiempo">
+					<div class="indicador-fill_1" data-target="1"></div>
+					<div class="indicador-fill_2" data-target="1"></div>
+				</div>
+				<p>1 Hora</p>
+			</div>
+			<div class="precio">
+				<h3>Precio:</h3>
+				<div class="indicador-precio">
+					<div class="indicador-fill_1" data-target="150"></div>
+					<div class="indicador-fill_2" data-target="150"></div>
+				</div>
+				<p>$150</p>
+			</div>
+			<a href="<?=base_url()?>book_now">Solicitar!</a>
+		</div>
+	</center>
+	<center class="servicio">
+		<div class="servicio-img">
+			<img src="<?=base_url()?>img/peinado_maquillaje.jpg" alt="Servicio">
+			<div class="filter_white"></div>
+		</div>
+		<div class="servicio-info">
+			<h2>Peinado y Maquillaje</h2>
+			<div class="duracion">
+				<h3>Duración:</h3>
+				<div class="indicador-tiempo">
+					<div class="indicador-fill_1" data-target="2"></div>
+					<div class="indicador-fill_2" data-target="3"></div>
+				</div>
+				<p>1 a 3 Horas</p>
+			</div>
+			<div class="precio">
+				<h3>Precio:</h3>
+				<div class="indicador-precio">
+					<div class="indicador-fill_1" data-target="550"></div>
+					<div class="indicador-fill_2" data-target="650"></div>
+				</div>
+				<p>$550 - $650</p>
+			</div>
+			<a href="<?=base_url()?>book_now">Solicitar!</a>
+		</div>
 	</center>
 </div>
+<?php include('template/footer1.php'); ?>

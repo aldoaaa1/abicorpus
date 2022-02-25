@@ -47,12 +47,18 @@
 			</g>
 	</svg>
 	<section id="message_form">
-		<p id="nombre_label">Nombre</p>
-		<input name="nombre" id="nombre" type="text" autocomplete="off">
-		<p id="correo_label">Correo</p>
-		<input name="correo" id="correo" type="text" autocomplete="off">
-		<p id="message_label">Mensaje</p>
-		<textarea name="message" id="message" cols="10" rows="10" autocomplete="off"></textarea>
+		<div class="inp">
+			<label for="nombre" id="nombre_label">Nombre</label>
+			<input name="nombre" id="nombre" type="text" autocomplete="off">
+		</div>
+		<div class="inp">
+			<label for="correo" id="correo_label">Correo</label>
+			<input name="correo" id="correo" type="text" autocomplete="off">
+		</div>
+		<div class="inp">
+			<label for="message" id="message_label">Mensaje</label>
+			<textarea name="message" id="message" cols="10" rows="10" autocomplete="off"></textarea>
+		</div>
 		<h3 onclick="enviarMensaje();">Enviar Mensaje</h3>
 	</section>
 </center>

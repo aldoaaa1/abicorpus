@@ -64,23 +64,35 @@ menu > a:nth-child(4){
     opacity: 0;
     animation: fadeInRight 1s ease 1s forwards;
 }
-#message_form p{
+#message_form{
+    width: 350px;
+}
+#message_form .inp{
+    position: relative;
+    width: 100%;
+}
+#message_form label{
+    position: absolute;
+    top: -9px; left: 0;
+    width: 100%;
     color: #fff;
     margin: 15px 0 7px;
     pointer-events: none;
-    transform: translateY(32px);
     font-size: 15px;
     transition: all 0.4s ease;
+    z-index: 3;
 }
 #message_form input, #message_form textarea{
     display: block;
-    width: 350px;
+    width: 100%;
     max-width: 90%;
     border-radius: 2px;
     text-align: center;
     border: none;
-    background-color: #0007;
+    background-color: #0009;
     color: #fff; padding: 10px;
+    border-radius: 10px 3px;
+    margin: 40px 0;
 }
 #message_form input{
     height: 30px;
@@ -104,11 +116,13 @@ menu > a:nth-child(4){
     display: inline-block;
     padding: 10px 20px;
     cursor: pointer;
-    color: #585858;
-    margin-top: 50px;
+    color: #000;
+    margin-top: 0;
     opacity: 0;
     animation: flipInX 1s ease 2.5s forwards;
+    font-size: 15px;
+    border-radius: 10px 3px;
 }
 .focus_label{
-    transform: translateY(0) !important;
+    top: -40px !important;
 }
