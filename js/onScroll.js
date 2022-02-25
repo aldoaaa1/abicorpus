@@ -1,92 +1,59 @@
-let onScroll_element = document.querySelectorAll(".onScroll");
-function oS_hideElement(e, i){
-	e.style.transition = "all 0.3s ease";
-	e.style.opacity = "0";
-	if (e.dataset.d) {e.dataset.d=false;}
-}
-function oS_showType(e, i, type){
-	let transition = 'all '+e.dataset.speed+' ease';
-	switch (type){
-		case 'show':
-			onScroll_element[i].style.transition = 'all '+onScroll_element[i].dataset.speed+' ease';
-			onScroll_element[i].style.opacity = '1';
-		break;
-		case 'up':
-			e.style.transition = 'all 0s';
-			e.style.transform = 'translateY(50px)';
-			setTimeout(function(){
-				e.style.transition = transition;
-				e.style.opacity = '1';
-				e.style.transform = 'translateX(0px)';
-			},10)
-		break;
-		case 'left':
-			e.style.transition = 'all 0s';
-			e.style.transform = 'translateX(-50px)';
-			setTimeout(function(){
-				e.style.transition = transition;
-				e.style.opacity = '1';
-				e.style.transform = 'translateX(0px)';
-			},10)
-		break;
-		case 'right':
-			e.style.transition = 'all 0s';
-			e.style.transform = 'translateX(50px)';
-			setTimeout(function(){
-				e.style.transition = transition;
-				e.style.opacity = '1';
-				e.style.transform = 'translateX(0px)';
-			},10)
-		break;
-		default:
-			console.log('Tipo de transisión no establecida correctamente.')
-		break;
-	}
-}
-function onScroll(){
-	if (window.innerWidth < 1024) { return false;	}
-	let currentScrollValue = document.documentElement.scrollTop;
-	let screenHeight = window.innerHeight;
-	for (let i = 0; i < onScroll_element.length; i++) {
-		let e = onScroll_element[i];
-		let elementScrollTop = e.offsetTop;
-		let heightToShow = (1 - e.dataset.height) * screenHeight;
-		if (elementScrollTop - heightToShow > currentScrollValue) {
-			if (e.style.opacity == "0") {continue;}
-			oS_hideElement(e, i);
-			continue;
-		}
-		if (e.style.opacity == "1") {continue;}
-		//FUNCIONES DE LAS OPCIONES DE APARICIÓN
-		if (e.dataset.delay) {
-			if (e.dataset.d=="true") {continue;}
-			if (e.dataset.d == undefined || e.dataset.d=="false") {
-				e.dataset.d = true;
-				setTimeout(function(){
-					oS_showType(e, i, e.dataset.type);
-				}, e.dataset.delay)
-			}
-		} else{oS_showType(e, i, e.dataset.type)}
-	}
-}
-window.addEventListener('scroll', onScroll);
+// VARIABLES MODIFICABLES PARA MEJOR FUNCIONAMIENTO
+var porcentajeAltura = 0.85; var distance = '50px'; var time = '1.5s';
 
+var scroll = [];
+scroll[0] = document.querySelectorAll(".onScroll[data-type=up]");
+scroll[1] = document.querySelectorAll(".onScroll[data-type=right]");
+scroll[2] = document.querySelectorAll(".onScroll[data-type=left]");
+scroll[3] = document.querySelectorAll(".onScroll[data-type=show]");
+var clientHeight = document.documentElement.clientHeight;
 
-
-//SCRIPT COPIADO PARA MOSTAR ELEMENTOS CON ARRAYS
-function showElements(e){
-	for(let i = 0; i < e.length; i++){
-		e[i].style.opacity = 0;
-	}
-	setTimeout(loader(),50);
-	var	time = 100;
-	for(let i = 0; i < e.length; i++){
-		time += 100;
-		e[i].style.transform = 'translateY(30px)';
+for (let i = 0; i < scroll.length; i++) {
+	for (let t = 0; t < scroll[i].length; t++) {
+		scroll[i][t].style.opacity = 0;
+		if (i == 0) { scroll[i][t].style.transform = 'translateY(' + distance + ')'; }
+		if (i == 1) { scroll[i][t].style.transform = 'translateX(-' + distance + ')'; }
+		if (i == 2) { scroll[i][t].style.transform = 'translateX(' + distance + ')'; }
 		setTimeout(function(){
-			e[i].style.transition = 'all 0.5s ease';
-			e[i].style.opacity = 1;
-			e[i].style.transform = 'translateY(0px)';
-		}, time);
+			scroll[i][t].style.transition = 'all '+time+' ease';
+		}, 100)
 	}
 }
+
+// Se llama funcion para que los elementos superiores se muestren con animación
+setTimeout(onScrollShow2(), time);
+
+function onScrollShow2(){
+	// Defino la altura del scroll
+	scrollTop = pageYOffset;
+	// Defino la altura a la que deberían de mostrarse las cosas
+	targetScroll =  (clientHeight * porcentajeAltura) + scrollTop;
+	for (let i = 0; i < scroll.length; i++) {
+		for (let t = 0; t < scroll[i].length; t++) {
+			if (targetScroll > scroll[i][t].offsetTop) {
+				if (scroll[i][t].style.opacity == 0) {
+					// console.log ('Pasó 1!!');
+					if (scroll[i][t].dataset.delay) {
+						setTimeout(function(){
+							scroll[i][t].style.opacity = 1;
+							if (i < 3) { scroll[i][t].style.transform = 'translateY(0px)'; }
+						}, scroll[i][t].dataset.delay)
+					}else{
+						scroll[i][t].style.opacity = 1;
+						if (i < 3) { scroll[i][t].style.transform = 'translateY(0px)'; }
+					}
+				}
+			} else{
+				if (scroll[i][t].style.opacity == 1) {
+					// console.log ('1 elemento escondido!');
+					scroll[i][t].style.opacity = 0;
+					if (i == 0) { scroll[i][t].style.transform = 'translateY(' + distance + ')'; }
+					if (i == 1) { scroll[i][t].style.transform = 'translateX(-' + distance + ')'; }
+					if (i == 2) { scroll[i][t].style.transform = 'translateX(' + distance + ')'; }
+				}
+			}
+		}
+	}
+}
+
+window.addEventListener('scroll', onScrollShow2);

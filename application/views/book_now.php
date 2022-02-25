@@ -71,7 +71,7 @@
 			?>
 		</select><br>
 		<label for="date">Dia</label>
-		<input id="date" onchange="getSchedule()" name="date" type="date" min="<?= $hoy ?>" max="<?= $luego ?>"><br>
+		<input id="date" onchange="" name="date" type="date" min="<?= $hoy ?>" max="<?= $luego ?>"><br>
 		<label for="hora">Hora</label>
 		<select id="hora" name="hora" disabled>
 			<!-- Relleno de opciones en base a la agenda del día seleccionado -->

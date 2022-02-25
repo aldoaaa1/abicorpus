@@ -390,3 +390,4 @@
 		</div>
 	</center>
 </div>
+<?php include('template/footer1.php'); ?>

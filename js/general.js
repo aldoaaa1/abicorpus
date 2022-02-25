@@ -12,9 +12,9 @@ $(document).ready(function(){
 	loader();
 });
 function selectMenu(page){
-	setTimeout(function(){
-		document.querySelector("body > header > menu > a:nth-child("+page+")").classList.add("menu_seleccionado");
-	},500);
+	// setTimeout(function(){
+	// 	document.querySelector("body > header > menu > a:nth-child("+page+")").classList.add("menu_seleccionado");
+	// },500);
 }
 
 // Funciones del header común entre páginas
