@@ -13,12 +13,12 @@
 				<p>9:00am - 2:00pm</p>
 			</div>
 			<div class="a1">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, at.</p>
+				<p>Puede agendar cita en cualquiera de nuestros medios de comunicación oficiales.</p>
 			</div>
 		</div>
 		<div class="line_footer"></div>
 		<div class="info_f2">
-			<p>Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Enim qui sequi quisquam adipisci amet eum quo a id odit earum.</p>
+			<p>Todos los derechos reservados. Abi Corpus Hair Studio</p>
 			<div>
 				<a href="#"><img src="img/facebook.svg" alt="Facebook"></a>
 				<a href="#"><img src="img/instagram.svg" alt="Instagram"></a>
@@ -35,20 +35,23 @@
 		text-align: center;
 	}
 	.info_f1{
-		width: 800px; height: 100px; margin: 0 auto 20px;
+		margin: 0 auto 20px;
 		display: flex; flex-direction: row;
 		align-items: center; justify-content: center;
 	}
 	.info_f1 .a1, .info_f1 .a2{
 		width: 25%;
+		min-width: 200px;
 	}
 	.info_f1 .a1{
-		height: 80%;
+		height: 70%;
 		color: Black;
 		border: solid 2px black;
+		padding: 2px;
 	}
 	.info_f1 .a2{
 		height: 100%;
+		padding: 10px;
 		background-color: black;
 		color: white;
 		display: flex; flex-direction: column;
@@ -82,9 +85,33 @@
 		width: 20px;
 	}
 	.info_f2 p{
+		text-align: left;
 		width: 66.66%;
 	    font-size: 12px;
 	  	color: #777;
 	    margin: 0;
+	}
+
+	@media (max-width: 800px) {
+		.info_f1 > div:nth-child(4){
+			display: none;
+		}
+		.info_f1{
+			flex-direction: column;
+		}
+		.info_f2{
+			flex-direction: column;
+		}
+		.info_f2 > p{
+			text-align: center;
+			max-width: 180px;
+			margin: 10px 0;
+		}
+		.info_f2 > div{
+			margin: auto;
+		}
+		footer{
+			padding-bottom: 30px;
+		}
 	}
 </style>

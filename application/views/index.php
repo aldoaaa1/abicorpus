@@ -1,8 +1,8 @@
 <div class="top">
 	<div>
 		<div class="t-left">
-			<a href="<?=base_url()?>book_now">Agendar tu Cita</a>
-			<p>Tel: 81292390</p>
+			<!-- <a href="<?=base_url()?>book_now">Agendar tu Cita</a> -->
+			<p>Tel:  (81) 81292390</p>
 		</div>
 		<div class="t-right sm-hide">
 			<a href="https://www.facebook.com/abicorpuss" target="_blank">Facebook</a>
@@ -11,7 +11,7 @@
 		</div>
 	</div>
 </div>
-<div id="header1" class="container">
+<!-- <div id="header1" class="container">
 	<menu>
 		<img src="<?=base_url()?>img/AbiNegro.svg" alt="">
 		<div class="line1"></div>
@@ -27,20 +27,24 @@
 			<div class="line"></div>
 		</div>
 	</menu>
-	
-</div>
+</div> -->
 <div id="header2" class="container">
 	<h1 class="onScroll" data-type="show" data-delay="500">Abi Corpus</h1>
 	<img class="onScroll" data-type="up" data-delay="650" src="img/header2.jpeg" alt="Salón de Belleza">
 	<div class="h_footer">
 		<div class="onScroll" data-type="left">
 			<h3>Dirección</h3>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quas.</p>
+			<p>
+				José Peón COntreras 2125, Contry Sol 5to Sector, CP 67174, Guadalupe, N.L.
+			</p>
 		</div>
 		<div class="separador"></div>
 		<div class="onScroll" data-type="right">
 			<h3>Contacto</h3>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quas.</p>
+			<p>
+				(81) 81292390 y <br> 8119941116 (WhatsApp) <br>
+				info@abicorpushairstudio.com
+			</p>
 		</div>
 	</div>
 </div>
@@ -80,7 +84,7 @@
 			<h6>Uñas de Acrilico</h6>
 		</div>
 	</div>
-	<a class="onScroll" data-type="up" href="<?=base_url()?>services">Ver Precios</a>
+	<!-- <a class="onScroll" data-type="up" href="<?=base_url()?>services">Ver Precios</a> -->
 </div>
 <div id="ubicacion" class="full_container onScroll" data-type="up" data-delay="200">
 	<h2>Ubicación</h2>
