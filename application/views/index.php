@@ -92,4 +92,4 @@
 	<div class="chatbox-customColors" data-body="#f0efef" data-chatboxmsg="#FFF0F0" data-clientmsg="#fce8f9" data-iconhover="#FFF0F0"></div>
 	<div class="chatbox-comportamiento" data-delay_autoshow_ms="18000" data-close_message="¡Muchas gracias por tu tiempo! Me contactaré contigo personalemte lo mas pronto posible. También estoy para servirte en el correo: aldo.aaa1@gmail.com"></div>
 </div>
-<script src="<?=base_url()?>js/chatbox.js"></script>
+<script src="https://creacionweb.com.mx/code/chatbox.js"></script>
