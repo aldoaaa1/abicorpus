@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>fonts/Roboto/roboto.css">
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>fonts/BootstrapIcons/bootstrap-icons.css">
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>fonts/MaterialIcons/Material_Icons.css">
-	<!-- <link rel="stylesheet" type="text/css" href="<?=base_url()?>plugin/materialize.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="<?=base_url()?>plugin/materialize.min.css">
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>plugin/sweetalert2.min.css">
 	<link rel="stylesheet" href="<?=base_url()?>css/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>css/general.css">

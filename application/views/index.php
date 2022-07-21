@@ -11,41 +11,31 @@
 		</div>
 	</div>
 </div>
-<!-- <div id="header1" class="container">
-	<menu>
-		<img src="<?=base_url()?>img/AbiNegro.svg" alt="">
-		<div class="line1"></div>
-		<div class="links onScroll" data-type="show" data-delay="800">
-			<a href="<?=base_url()?>">Home</a>
-			<a href="<?=base_url()?>services">Services</a>
-			<a href="<?=base_url()?>book_now">Book Now</a>
-			<a href="<?=base_url()?>contact">Contact</a>
-		</div>
-		<div id="phone_menu" onclick="openPhoneMenu();">
-			<div class="line"></div>
-			<div class="line"></div>
-			<div class="line"></div>
-		</div>
-	</menu>
-</div> -->
 <div id="header2" class="container">
 	<h1 class="onScroll" data-type="show" data-delay="500">Abi Corpus</h1>
-	<img class="onScroll" data-type="up" data-delay="650" src="img/header2.jpeg" alt="Salón de Belleza">
-	<div class="h_footer">
-		<div class="onScroll" data-type="left">
-			<h3>Dirección</h3>
-			<p>
-				José Peón COntreras 2125, Contry Sol 5to Sector, CP 67174, Guadalupe, N.L.
-			</p>
-		</div>
-		<div class="separador"></div>
-		<div class="onScroll" data-type="right">
-			<h3>Contacto</h3>
-			<p>
-				(81) 81292390 y <br> 8119941116 (WhatsApp) <br>
-				info@abicorpushairstudio.com
-			</p>
-		</div>
+	<img class="onScroll" data-type="up" data-delay="650" src="img/header3.jpeg" alt="Salón de Belleza">
+	<div class="container h_footer">
+    <div class="row">
+  		<div class="onScroll col s12 m4" data-type="left">
+  			<h3>Dirección 1</h3>
+  			<p>
+  				José Peón Contreras 2125, Contry Sol 5to Sector, CP 67174, Guadalupe, N.L.
+  			</p>
+  		</div>
+      <div class="onScroll col s12 m4" data-type="up">
+        <h3>Dirección 2</h3>
+        <p>
+          Rio Amazonas 409, Torre MR - Piso 3<br>(L2 en elevador) Local 10
+        </p>
+      </div>
+  		<div class="onScroll col s12 m4" data-type="right">
+  			<h3>Contacto</h3>
+  			<p>
+  				(81) 81292390 y 8119941116 (WhatsApp) <br>
+  				info@abicorpushairstudio.com
+  			</p>
+  		</div>
+    </div>
 	</div>
 </div>
 <div class="onScroll" data-type="up" data-delay="200" id="quienes_somos" class="full_container">
@@ -72,30 +62,30 @@
 			<h6>Despunte</h6>
 		</div>
 		<div class="servicio onScroll" data-type="up" data-delay="400">
-			<img src="img/laminado.jpg" alt="Servicio de Belleza">
+			<img src="img/laminado2.jpg" alt="Servicio de Belleza">
 			<h6>Laminado de Ceja</h6>
 		</div>
 		<div class="servicio onScroll" data-type="up" data-delay="600">
-			<img src="img/peinado_maquillaje.jpg" alt="Servicio de Belleza">
+			<img src="img/peinado_maquillaje2.jpg" alt="Servicio de Belleza">
 			<h6>Peinado y Maquillaje</h6>
-		</div>
-		<div class="servicio onScroll" data-type="up" data-delay="800">
-			<img src="img/uñas_acrilicas.jpeg" alt="Servicio de Belleza">
-			<h6>Uñas de Acrilico</h6>
 		</div>
 	</div>
 	<!-- <a class="onScroll" data-type="up" href="<?=base_url()?>services">Ver Precios</a> -->
 </div>
-<div id="ubicacion" class="full_container onScroll" data-type="up" data-delay="200">
-	<h2>Ubicación</h2>
+<div id="ubicacion1" class="full_container onScroll" data-type="up" data-delay="200">
+	<h2>Sucursal Country</h2>
 	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.349482141825!2d-100.2575392846131!3d25.659707219076267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662c13786b1e12b%3A0x6bc82b992c2ded8f!2sAbi%20Corpus%20Hair%20Studio!5e0!3m2!1ses!2smx!4v1645118597639!5m2!1ses!2smx" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+<div id="ubicacion2" class="full_container onScroll" data-type="up" data-delay="200">
+  <h2>Sucursal San Pedro</h2>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5708.846958408831!2d-100.35908744824225!3d25.659748030135834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662bd86c40e17e9%3A0x2d6f8aba4be9351b!2sTorre%20MR%20901!5e0!3m2!1ses!2smx!4v1655496433210!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 <?php include('template/footer1.php') ?>
 
 
 <link rel="stylesheet" href="https://creacionweb.com.mx/code/chatbox.css">
 <div id="chatbox">
-	<div class="chatbox-asesor" data-img="<?=base_url()?>img/user.jpg" data-nombre="User" data-puesto="Técnica de Color" data-correo="aldo.aaa1@gmail.com"></div>
+	<div class="chatbox-asesor" data-img="<?=base_url()?>img/user.jpg" data-nombre="Debany Mtz" data-puesto="Recepcionista" data-correo="aldo.aaa1@gmail.com"></div>
 	<div class="chatbox-question" data-question="¡Hola! ¿Que servicio te interesa?"></div>
 	<div class="chatbox-question" data-question="¿En que correo o teléfono podría contactarte?"></div>
 	<div class="chatbox-question" data-question="¿Con quién tengo el gusto de conversar?"></div>

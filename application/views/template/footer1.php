@@ -30,7 +30,7 @@
 
 <style>
 	footer{
-		background-color: #FFE2E0;
+		background-color: #eaeaea;
 		padding-top: 20px;
 		text-align: center;
 	}
@@ -39,6 +39,9 @@
 		display: flex; flex-direction: row;
 		align-items: center; justify-content: center;
 	}
+  .info_f1 h2, .info_f1 p{
+    margin: 0;
+  }
 	.info_f1 .a1, .info_f1 .a2{
 		width: 25%;
 		min-width: 200px;
@@ -47,7 +50,7 @@
 		height: 70%;
 		color: Black;
 		border: solid 2px black;
-		padding: 2px;
+		padding: 10px;
 	}
 	.info_f1 .a2{
 		height: 100%;
